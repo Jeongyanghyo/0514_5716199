@@ -128,7 +128,7 @@ int main() {
 				printf("선택: 2\n");
 				printf("삭제할 위치를 입력하세요:");
 				scanf_s("%d", &pos);
-				delete(&list, 0);
+				delete(&list, pos);
 				count = insert(&list, pos, num);
 				printf("삭제 완료, 데이터 이동 횟수:%d", count);
 			}
